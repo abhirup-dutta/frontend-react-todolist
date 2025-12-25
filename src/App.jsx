@@ -61,7 +61,11 @@ function App() {
     }, []);
 
   return (
+
     <>
+        <header class='mac-header'>
+            To Do List
+        </header>
         <TodoInput todoValue={todoValue}
                    handleSetTodoInput={handleSetTodoInput}
                    handleAddTodos={handleAddTodos}

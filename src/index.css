@@ -19,7 +19,7 @@ button {
     display: flex;
     flex-direction: column;
     padding: 14px;
-    background: #eff6ff;
+    background: #f4f4f4;
     gap: 14px;
 }
 
@@ -78,7 +78,7 @@ p {
     gap: 14px;
     padding: 14px;
     border-radius: 14px;
-    background: white;
+    background: #e0e0e0;
 }
 
 .todoItem p {
@@ -114,4 +114,54 @@ p {
     p {
         font-size: 1em;
     }
+}
+
+.mac-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* The key blur effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle bottom border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    z-index: 1000;
+    color: #333333;
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    justify-content: center;
+}
+
+.sleek-silver-btn {
+    /* Button Basics */
+    display: inline-block;
+    padding: 12px 28px; /* Adjust padding for button size */
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; /* For anchor tags */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 25px; /* Adjust for desired roundness; 50% for fully circular/pill shape */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+
+    /* Silver Styling */
+    background-color: #f4f4f4; /* Fallback color */
+    background: linear-gradient(to bottom, #ffffff, #e0e0e0); /* Sleek silver gradient */
+    color: #333; /* Darker text color for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5); /* Subtle shadows for depth */
+}
+
+/* Hover Effect */
+.sleek-silver-btn:hover {
+    background: linear-gradient(to bottom, #e0e0e0, #ffffff); /* Invert gradient on hover */
+    border-color: #aaa;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Active (Pressed) Effect */
+.sleek-silver-btn:active {
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4); /* Revert gradient, simulate press */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px); /* Little push down to feel realistic */
 }

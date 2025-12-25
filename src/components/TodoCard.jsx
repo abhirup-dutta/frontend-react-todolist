@@ -8,12 +8,14 @@ export default function TodoCard(props) {
         <li className='todoItem'>
             {children}
             <div className='actionsContainer'>
-                <button onClick={() => {
+                <button class='sleek-silver-btn'
+                        onClick={() => {
                     handleEditTodo(index);
                 }}>
                     Edit
                 </button>
-                <button onClick={() => {
+                <button class='sleek-silver-btn'
+                    onClick={() => {
                     handleDeleteTodo(index);
                 }}>Delete</button>
             </div>
