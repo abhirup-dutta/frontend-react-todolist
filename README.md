@@ -1,3 +1,10 @@
+# Description
+
+To Do List using React and JavaScript
+
+
+<img width="854" height="442" alt="Screenshot 2025-12-25 at 2 10 36 AM" src="https://github.com/user-attachments/assets/2bd2c1bf-7d76-49fc-b63d-4ac94cc5f09b" />
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
